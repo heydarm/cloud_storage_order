@@ -1,0 +1,9 @@
+@mixin range-input-thumb {
+  &::-webkit-slider-thumb {
+    @content;
+  }
+
+  &::-moz-range-thumb {
+    @content;
+  }
+}
