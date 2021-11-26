@@ -1,0 +1,15 @@
+.container {
+  display: inline-grid;
+  align-items: center;
+  justify-content: start;
+  grid-template-columns: repeat(3, auto);
+  font-size: 1.5rem;
+  gap: 0.25rem;
+}
+
+.input {
+  width: 4ch;
+  line-height: 1;
+  font-size: 1.125rem;
+  text-align: center;
+}

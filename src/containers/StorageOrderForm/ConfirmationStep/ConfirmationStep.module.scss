@@ -1,0 +1,52 @@
+.body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.infoRow {
+  display: flex;
+}
+
+.name {
+  display: flex;
+  flex-grow: 1;
+  align-items: end;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0 0.5em 0.25em;
+    display: block;
+    border-bottom: 2px dotted black;
+  }
+}
+
+.price {
+  font-weight: 1.5rem;
+}
+
+.finalPrice {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #2dc579;
+  font-weight: bold;
+}
+
+.receipt,
+.finalPrice {
+  border-radius: 0.25rem;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+}

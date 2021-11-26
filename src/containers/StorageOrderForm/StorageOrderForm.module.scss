@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: clamp(0%, 70rem, 95%);
+  max-height: 80%;
+  background-color: white;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+}
+
+.header {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.body {
+  padding: 1rem min(8rem, 10%) 2rem;
+}
+
+.footer {
+  padding: 2rem;
+  margin-top: auto;
+  background-color: rgb(247, 247, 247);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10ch, 1fr));
+  gap: 10%;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+}
+
+.stepBtn {
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgrey;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+
+  &:where(:not(:disabled):hover) {
+    background-color: var(--primary-color);
+    color: white;
+  }
+}

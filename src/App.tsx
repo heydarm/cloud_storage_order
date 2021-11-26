@@ -1,5 +1,11 @@
+import { StorageOrderForm } from "containers";
+
 function App() {
-  return <div></div>;
+  return (
+    <div className="App">
+      <StorageOrderForm />
+    </div>
+  );
 }
 
 export default App;
